@@ -2,4 +2,4 @@ link remoto: http://mpayeras.ifc33b.cifpfbmoll.eu/projects/dwes_2021-magic2497/1
 
 4-
 
-b) Si la propiedad es protegida la subclase podra utilizarla pero si la propiedad es priva solo podra utilizar la propiedad la clase padre.
+b) Si la propiedad es protegida la subclase podra utilizarla pero si la propiedad es privada solo podra utilizar la propiedad la clase padre.
