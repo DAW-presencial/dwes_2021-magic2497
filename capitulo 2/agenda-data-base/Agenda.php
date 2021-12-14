@@ -28,12 +28,11 @@ class Agenda
         $this->created = date('Y-m-d H:i:s');
 
         // insert query
-        $query = "INSERT INTO
-                " . $this->table_name . "
+        $query = "INSERT INTO " . $this->table_name . " (nom, telefono, email)             
             VALUES(
-            nom = :nom,
-            telefono = :telefono,
-            email = :email)";
+             :nom,
+             :telefono,
+             :email)";
 
         // prepare the query
         $stmt = $this->conn->prepare($query);
