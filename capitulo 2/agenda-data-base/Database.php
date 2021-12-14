@@ -6,8 +6,8 @@ class Database
     // specify your own database credentials
     private const host = "localhost";
     private const db_name = "agenda";
-    private const username = "root";
-    private const password = "";
+    private const username = "mpayeras";
+    private const password = "abc123.";
     private static $conn;
 
     // get the database connection

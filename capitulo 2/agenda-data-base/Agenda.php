@@ -70,7 +70,7 @@ class Agenda
                 nom,
                 email,
                 telefono,
-                email
+            
                 
             FROM " . $this->table_name . "
             ORDER BY id DESC
