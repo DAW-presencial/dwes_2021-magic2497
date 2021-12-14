@@ -86,4 +86,12 @@ class Agenda
         // return values
         return $stmt;
     }
+    function showContacts()
+    {
+        $query = "SELECT * FROM " . $this->table_name;
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+        $data = $stmt->fetchAll();
+        return $data;
+    }
 }

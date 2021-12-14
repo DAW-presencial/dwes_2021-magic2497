@@ -62,14 +62,13 @@
     <div class="agenda">
         <h2 style="padding-left: 21px">Agenda</h2>
         <?php
-        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            extract($row);
+        $data = $agenda->showContacts();
+        if ($_POST) {
 
-
-
-            echo "<p>{$nom} {$telefono} {$email}</p>";
+            foreach ($data as list($nom, $telefono, $email)) {
+                echo "<p> $nom $telefono $email </p>";
+            }
         }
-
         ?>
 
     </div>
