@@ -62,7 +62,7 @@ class Agenda
     }
 
     // read all user records
-    function readAll($from_record_num, $records_per_page)
+    function readAll()
     {
 
         // query to read all user records, with limit clause for pagination
@@ -79,9 +79,7 @@ class Agenda
         // prepare query statement
         $stmt = $this->conn->prepare($query);
 
-        // bind limit clause variables
-        $stmt->bindParam(1, $from_record_num, PDO::PARAM_INT);
-        $stmt->bindParam(2, $records_per_page, PDO::PARAM_INT);
+
 
         // execute query
         $stmt->execute();

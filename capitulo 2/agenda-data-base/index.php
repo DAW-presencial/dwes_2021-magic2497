@@ -19,7 +19,7 @@
     // initialize objects
     $user = new Agenda($db);
 
-    $stmt = $user->readAll($from_record_num, $records_per_page);
+    $stmt = $user->readAll();
     if ($_POST) {
 
 
