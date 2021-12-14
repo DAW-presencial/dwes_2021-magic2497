@@ -12,7 +12,7 @@
 
     include_once 'Database.php';
     include_once 'Agenda.php';
-
+    $stmt = $user->readAll($from_record_num, $records_per_page);
     if ($_POST) {
 
         // get database connection
