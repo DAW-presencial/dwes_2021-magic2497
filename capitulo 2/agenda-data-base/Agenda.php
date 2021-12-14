@@ -30,10 +30,10 @@ class Agenda
         // insert query
         $query = "INSERT INTO
                 " . $this->table_name . "
-            SET
+            VALUES(
             nom = :nom,
             telefono = :telefono,
-            email = :email,";
+            email = :email)";
 
         // prepare the query
         $stmt = $this->conn->prepare($query);
