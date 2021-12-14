@@ -16,10 +16,11 @@
     $database = new Database();
     $db = $database->getConnection();
 
-    // initialize objects
-    $user = new Agenda($db);
 
-    $stmt = $user->readAll();
+    // initialize objects
+    $agenda = new Agenda($db);
+
+    $stmt = $agenda->readAll();
     if ($_POST) {
 
 
