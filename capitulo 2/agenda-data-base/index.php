@@ -12,15 +12,15 @@
 
     include_once 'Database.php';
     include_once 'Agenda.php';
+    // get database connection
+    $database = new Database();
+    $db = $database->getConnection();
+
+    // initialize objects
+    $user = new Agenda($db);
+
     $stmt = $user->readAll($from_record_num, $records_per_page);
     if ($_POST) {
-
-        // get database connection
-        $database = new Database();
-        $db = $database->getConnection();
-
-        // initialize objects
-        $user = new Agenda($db);
 
 
         // set user email to detect if it already exists
